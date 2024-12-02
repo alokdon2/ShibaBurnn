@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/bb48ce63ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ShibaBurnTribe</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      @font-face {
+        font-family: "AsianHiro";
+        src: url("/Fonts/AAsianHiro.otf");
+      }
+      .ah {
+        font-family: "AsianHiro";
+      }
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        transition: 0.5s ease-in-out;
+      }
+      body {
+        background: url("https://cdn.discordapp.com/attachments/901409732059865088/1015212591393558558/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+      .navbar img {
+        aspect-ratio: 1;
+        height: 10vh;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .underline {
+        height: 5px;
+        width: 125px;
+        background: crimson;
+        margin: 15px 0px;
+        border-radius: 12px;
+      }
+      .info .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+      .info {
+        padding: 15px;
+        color: white;
+        background: #1d1d1f;
+        border-radius: 12px;
+        margin: 15px;
+      }
+
+      .box-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+      }
+      .box-content .box {
+        width: 75%;
+        background: var(--i);
+        color: white;
+        aspect-ratio: 16/9;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 10px solid gray;
+        position: relative;
+      }
+      .box button {
+        padding: 10px 20px;
+        background: rgb(82, 82, 82);
+        color: white;
+        /* border-radius: 12px; */
+        margin: 5px 0px;
+        border: none;
+        cursor: pointer;
+      }
+      .box .content {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+      }
+      .box .row {
+        color: orange;
+      }
+      #main-element {
+        display: none;
+      }
+
+      video {
+        aspect-ratio: 16/9;
+        width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 10px solid rgb(88, 88, 88);
+        /* box-shadow: 5px 5px 0px rgba(220, 20, 60, 0.2); */
+      }
+
+      @media (max-width: 800px) {
+        .box-content .box {
+          width: 90%;
+          border: 5px solid white;
+        }
+        .box-content {
+          grid-template-columns: 1fr;
+          gap: 20px;
+          margin-bottom: 10vh;
+        }
+        .info .content {
+          grid-template-columns: 1fr;
+        }
+        video {
+          width: 90%;
+          border: 10px solid white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        src="https://cdn.discordapp.com/attachments/1021136628300910806/1021139412815450162/aSBT_logo.png"
+        alt=""
+      />
+      <div class="title">
+        <h2 class="ah">
+          ShibaBurn<span class="ah" style="color: crimson">Tribe</span>
+        </h2>
+      </div>
+
+      <div class="gap"></div>
+    </div>
+    <div id="main-element">
+      <br /><br />
+      <div class="box-content">
+        <div
+          class="box"
+          style="
+            --i: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://cdn.discordapp.com/attachments/1021136628300910806/1021147206734053397/photo_2022-09-19_01-39-02.jpg');
+          "
+        >
+          <div class="content">
+            <h1 class="ah">PRESALE</h1>
+            <!-- <br /> -->
+            <button onclick="transfers('comingsoon.html');">ENTER NOW</button
+            ><br />
+            <div class="row"><i class="fas fa-stopwatch"></i> LIVE SOON</div>
+          </div>
+        </div>
+        <!-- box ends here -->
+
+        <div
+          class="box"
+          style="
+            --i: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('https://cdn.discordapp.com/attachments/1021136628300910806/1021147207044436017/photo_2022-09-19_01-39-01.jpg');
+          "
+        >
+          <div class="content">
+            <h1 class="ah">PUBLIC SALE</h1>
+            <!-- <br /> -->
+            <button onclick="transfers('comingsoon.html');">ENTER NOW</button
+            ><br />
+            <div class="row"><i class="fas fa-stopwatch"></i> LIVE SOON</div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="title">
+          <p class="ah">INFO</p>
+
+          <div class="underline"></div>
+        </div>
+        <div class="content">
+          <div class="left">
+            SBT is a collection of 200 Shiba Burn Tribe NFTs—unique digital
+            collectibles living on the Ethereum blockchain. Each one of these
+            tribe member will grant u access to their community and will guid
+            you to their Shinseina jimen (sacred ground). This tribe is know as
+            extremely generous beings, they like to shower their guests with
+            Hikidemono (souvenirs). Guests will become part of the tribe when
+            they stake their NFT's. The passive income they will generate will
+            make them never want to leave again, Shinseina jimen will become
+            their new home.
+            <br /><br /><br />
+            THE COLLECTION <br /><br />
+            1. 150 Hunters and Warriors - will be available on our website
+            <br />2. 49 Royal family and priests - will be available on OpenSae
+            <br />3. 1 Prophet - will be sold at a auction on OpenSea
+          </div>
+          <div class="right">
+            <!-- WHITELISTING <br /> -->
+            <!-- At least 50m $SBP tokens need to be staked in plan 3 ( locked for 28
+            days) Yield - 200% APR <br /><br />
+            NFT STAKING <br />
+            Earn 80000 $SBP every 24 hrs by staking your NFT's <br /><br />
+            Market cap daily rewards <br />$100k mc = $0.10 <br />$1.000.000 mc
+            = $1 <br />$10.000.000 mc = $10 <br />$100.000.000 mc = $100
+            <br />$1.000.000.000 mc = $1000 -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video">
+      <video
+        id="play-video"
+        src="./assets/video.mp4"
+        controls
+        autoplay
+        poster="https://cdn.discordapp.com/attachments/901409732059865088/1019109634486837288/photo_2022-09-13_09-48-58.jpg"
+      ></video>
+
+      <button
+        onclick="ended();"
+        style="
+          padding: 10px 20px;
+          background: crimson;
+          color: white;
+          border: none;
+          position: absolute;
+          left: 50%;
+          top: 90%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          border-radius: 18px;
+          box-shadow: 2px 4px 0px rgba(220, 20, 60, 0.5);
+        "
+      >
+        SKIP <i class="fa-duotone fa-forward"></i>
+      </button>
+    </div>
+    <script>
+      let video = document.getElementById("play-video");
+      let videodiv = document.getElementById("video");
+      let data = document.getElementById("main-element");
+
+      video.oncanplay = function () {
+        video.play();
+      };
+
+      video.onended = function () {
+        videodiv.style.display = "none";
+        data.style.display = "block";
+      };
+      function transfers(link) {
+        window.location.href = link;
+      }
+      function ended() {
+        video.pause();
+        videodiv.style.display = "none";
+        data.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
